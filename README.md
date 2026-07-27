@@ -8,55 +8,6 @@ Sales data plays a vital role in understanding business performance and identify
 
 This project presents a **Sales Analytics Dashboard** built using many visualisation tools like Microsoft Power BI,Power Query Editor etc. transforming raw sales records into interactive and meaningful visualizations. The dashboard enables users to monitor sales, profit, returns, and customer purchasing behavior across different regions, categories, and time periods, allowing businesses to make informed strategic decisions.
 
-# Project Objective
-
-The objective of this project is to provide a comprehensive overview of business performance by:
-
-- Monitoring sales and profit trends.
-- Tracking customer purchasing behavior.
-- Identifying top-performing and low-performing products.
-- Comparing regional and category-wise performance.
-- Analyzing product returns and profitability.
-- Supporting better inventory and business decisions.
-
-# Technologies Used
-
-- Microsoft Power BI Desktop
-- Power Query
-- DAX (Data Analysis Expressions)
-- Microsoft Excel / CSV
-- Data Modeling
-
-# Dataset
-
-### Source
-
-**Superstore Sales Dataset**
-
-**Dataset Link:**
-
-https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
-
-### About the Dataset
-
-The Superstore Sales Dataset contains historical retail sales transactions collected from a fictional superstore. Each record represents a customer purchase and includes information about products, customers, sales, discounts, profits, shipping details, regions, and returns.
-
-The dataset is widely used for Business Intelligence and Data Analytics projects because it allows users to perform sales, profitability, customer, and regional performance analysis.
-
-# Dashboard Features
-
-- Interactive KPI Cards
-- Dynamic Year and Month Filters
-- Sales Forecasting
-- Profitability Analysis
-- Return Rate Analysis
-- Customer Segment Analysis
-- Product Performance Analysis
-- Regional Sales Analysis
-- Category & Sub-Category Performance
-- Monthly Sales Trend
-- Interactive Drill-down Visuals
-
 # Business Problem Statement
 
 Retail companies generate large volumes of sales data every day. However, without proper analysis, it becomes difficult to understand which products generate the highest revenue, which regions perform best, why profits fluctuate despite increasing sales, or how product returns affect business performance.
@@ -78,15 +29,127 @@ The dashboard answers the following business questions:
 - How do sales and profit change over time?
 - What is the expected sales forecast for upcoming months?
 
-# Dashboard Highlights
+  
+# Project Objective
 
-### KPI Cards
+The objective of this project is to provide a comprehensive overview of business performance by:
+
+- Monitoring sales and profit trends.
+- Tracking customer purchasing behavior.
+- Identifying top-performing and low-performing products.
+- Comparing regional and category-wise performance.
+- Analyzing product returns and profitability.
+- Supporting better inventory and business decisions.
+
+# Solution Approach 
+
+## 1. Data Collection & Preparation
+
+- Imported the sales dataset into **Microsoft Power BI Desktop**.
+- Performed initial data exploration using **Power Query Editor**.
+- Inspected the dataset using **Column Quality**, **Column Distribution**, and **Column Profile**.
+- Changed the profiling option to **Based on Entire Dataset** for comprehensive analysis.
+- Cleaned and transformed the dataset by handling missing values, validating data types, and removing inconsistencies to ensure data accuracy.
+
+---
+
+## 2. Data Modeling
+
+- Built an optimized data model by establishing relationships between the required tables.
+- Created a dedicated **Date Table** to enable advanced time intelligence calculations.
+- Structured the data model to support efficient filtering, aggregation, and report performance.
+
+---
+
+## 3. DAX Calculations & KPI Development
+
+Developed business-driven DAX measures to monitor key performance indicators, including:
 
 - Total Sales
 - Total Profit
-- Total Orders
-- Return Rate (%)
 - Profit Margin (%)
+- Average Delivery Days
+
+Additionally, implemented advanced DAX calculations using functions such as:
+
+- `CALCULATE()`
+- `SUM()`
+- `DIVIDE()`
+- `FILTER()`
+
+These measures enabled dynamic business analysis, KPI tracking, and time-based calculations across the dashboard.
+
+---
+
+## 4. Dashboard Development
+
+Designed multiple interactive report pages to provide comprehensive business insights, including:
+
+- Sales by Ship Mode
+- Sales by Category
+- Top Sales by Sub-Category
+- Monthly Sales (Year-over-Year)
+- Monthly Profit (Year-over-Year)
+- Regional Sales Analysis
+- City-wise Sales Analysis
+- Payment Mode Analysis
+- Return Rate Analysis
+- Loss Analysis by Product Sub-Category
+- State-wise Sales Performance
+
+Each visualization was designed to help users quickly identify trends, compare performance, and support data-driven decision-making.
+
+---
+
+## 5. Sales Forecasting
+
+Developed a **30-Day Sales Forecast** using Power BI's forecasting capabilities to estimate future sales trends based on historical performance, enabling better planning and proactive business decisions.
+
+---
+
+## 6. User Experience & Interactivity
+
+Enhanced the overall user experience by implementing:
+
+- Interactive Slicers
+- Cross-Filtering
+- Responsive Visual Interactions
+- Consistent Dashboard Theme
+- Professional Color Palette
+- Clean Layout and Formatting
+
+These features allow users to seamlessly explore data across multiple business dimensions.
+
+---
+
+## 7. Final Report Optimization
+
+- Optimized dashboard performance for smooth interaction.
+- Ensured consistency across all report pages through standardized formatting and visual design.
+- Delivered a professional, interactive Power BI dashboard that provides actionable business insights through an intuitive user interface.
+
+# Technologies Used
+
+- Microsoft Power BI Desktop
+- Power Query
+- DAX (Data Analysis Expressions)
+- Microsoft Excel / CSV
+- Data Modeling
+
+
+# Dashboard Features
+
+- Interactive KPI Cards
+- Dynamic Year and Month Filters
+- Sales Forecasting
+- Profitability Analysis
+- Return Rate Analysis
+- Customer Segment Analysis
+- Product Performance Analysis
+- Regional Sales Analysis
+- Category & Sub-Category Performance
+- Monthly Sales Trend
+- Interactive Drill-down Visuals
 
 ### Visualizations Used
 
@@ -99,7 +162,7 @@ The dashboard answers the following business questions:
 - KPI Cards for Business Summary
 - Slicers for Year, Month, Region and Category Filtering
 
-# Top 5 KPI Insights
+# Top 5 KPI Used
 
 ### Total Sales
 
@@ -130,26 +193,28 @@ Calculates the percentage of profit generated from total sales, indicating overa
 - Measures return rates and their impact on profitability.
 - Supports strategic pricing, inventory planning, and business growth.
 
-# Project Structure
+# Dataset
 
-```text
-Sales Analytics Dashboard/
-│
-├── Dataset/
-│   └── Superstore_Sales_Dataset.xlsx
-│
-├── Dashboard/
-│   └── Sales Analytics Dashboard.pbix
-│
-├── Images/
-│   └── Dashboard.png
-│
-└── README.md
-```
+### Source
+
+**Superstore Sales Dataset**
+
+**Dataset Link:**
+
+https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+
 
 # Dashboard Preview
 
 ![Buisness Sales Analytics Dashboard](https://github.com/Dhruv250311-hash/Buisness-Sales-Anaytics-Dashboard/blob/main/Sales_Analytics.png)
+
+# Key Performance Analytics
+
+![Buisness Sales Analytics Dashboard](https://github.com/Dhruv250311-hash/Buisness-Sales-Anaytics-Dashboard/blob/main/Key_Performance_Analytics.jpeg)
+
+# 30 Days - Sales Forecast 
+
+![Buisness Sales Analytics Dashboard](https://github.com/Dhruv250311-hash/Buisness-Sales-Anaytics-Dashboard/blob/main/Sales_Forecast_30.jpeg)
 
 
 
